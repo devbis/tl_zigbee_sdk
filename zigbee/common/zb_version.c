@@ -1,13 +1,13 @@
 /********************************************************************************************************
- * @file    factory_reset.h
+ * @file    zb_version.c
  *
- * @brief   This is the header file for factory_reset
+ * @brief   This is the source file for zb_version
  *
  * @author  Zigbee Group
  * @date    2021
  *
  * @par     Copyright (c) 2021, Telink Semiconductor (Shanghai) Co., Ltd. ("TELINK")
- *			All rights reserved.
+ *          All rights reserved.
  *
  *          Licensed under the Apache License, Version 2.0 (the "License");
  *          you may not use this file except in compliance with the License.
@@ -23,10 +23,6 @@
  *
  *******************************************************************************************************/
 
-#ifndef FACTORY_RESET_H
-#define FACTORY_RESET_H
+#include "includes/zb_version.h"
 
-void factoryRst_init(void);
-void factoryRst_handler(void);
-
-#endif	/* FACTORY_RESET_H */
+volatile __attribute__((section(".sdk_version"))) unsigned char sdk_version[] = {SDK_VERSION(SDK_VERSION_ID)};

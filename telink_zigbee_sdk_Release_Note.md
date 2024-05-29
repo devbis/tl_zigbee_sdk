@@ -1,3 +1,102 @@
+## V3.6.8.5(Public release)
+
+### Features
+* Provide a method to enable/disable whether the previous parent is preferred when rejoin.
+### Bug Fixes
+* Fix OTA Image Block Response sending failure.
+### Code Refactoring
+* N/A
+### Performance
+* N/A
+### BREAKING CHANGES
+* N/A
+
+### Features
+* 提供一个方法来使能/关闭在Rejoin时是否优先选择之前的父节点。
+### Bug Fixes
+* 修复OTA Image Block Response发送失败的问题。
+### Code Refactoring
+* N/A
+### Performance
+* N/A
+### BREAKING CHANGES
+* N/A
+
+
+## V3.6.8.4(Public release)
+
+### Features
+* Update boot loader and application code.
+* Update drivers(drv_nv.c, drv_radio.h and .link files).
+### Bug Fixes
+* Fix associate join failure for a few devices in a large network.
+* Fix touch link issue.
+* Fix aps fragment data issue.
+* Fix the GP pairing issue.
+* Fix the global link key issue.
+* Fix misspell and this may cause naming changes to certain APIs and Structures.
+### Code Refactoring
+* N/A
+### Performance
+* N/A
+### BREAKING CHANGES
+* N/A
+
+### Features
+* 更新引导加载程序和应用程序代码。
+* 更新驱动程序（drv_nv.c、drv_radio.h和.link文件）。
+### Bug Fixes
+* 修复大型网络中少数设备关联入网失败的问题。
+* 修复touch link问题。
+* 修复aps数据分包的问题。
+* 修复GP配对的问题。
+* 修复global link key问题。
+* 修复拼写错误，这可能会导致某些API和数据结构的命名更改。
+### Code Refactoring
+* N/A
+### Performance
+* N/A
+### BREAKING CHANGES
+* N/A
+
+
+## V3.6.8.3(Public release)
+
+### Features
+* Normalizes the naming of content related to private schemas.
+* Update the NV module test in module_test.c.
+* Change the macro RESV_FOR_APP_RAM_CODE_SIZE to 0x2000 to reduce the firmware size of the bootLoader.
+* Provide a variable to change the allowRemoteTcPolicyChange of the Trust Center Policy.
+* Provide app_userBindingTblRestore() to restore the binding table if the aps_binding_table_t is modified by user in the older version SDK.
+### Bug Fixes
+* Fix the abnormal restart issue of the gateway.
+* Fix buffer free issue for the case incoming counter of the APS encrypted data doesn't match.
+* The RREQ should only be retransmitted if the radius is greater than 0.
+### Code Refactoring
+* N/A
+### Performance
+* N/A
+### BREAKING CHANGES
+* N/A
+
+### Features
+* 规范化与私有模式相关内容的命名。
+* 更新NV模块测试。
+* 将RESV_FOR_APP_RAM_CODE_SIZE改成0x2000以减小bootLoader固件的大小。
+* 提供一个变量来更改信任中心策略的allowRemoteTcPolicyChange值。
+* 提供app_userBindingTblRestore()来恢复绑定表，如果用户在旧版本的SDK中修改了aps_binding_table_t的话。
+### Bug Fixes
+* 修复网关异常重启问题。
+* 修复因APS加密数据的counter不匹配而导致的buffer未释放问题。
+* 只有当RREQ的半径大于0时才需要转发。
+### Code Refactoring
+* N/A
+### Performance
+* N/A
+### BREAKING CHANGES
+* N/A
+
+
 ## V3.6.8.2(Public release)
 
 ### Features
